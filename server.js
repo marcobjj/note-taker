@@ -20,6 +20,8 @@ const notes = require('./db/db.json');
 app.get('/api/notes', (req, res) => {
     let results = notes;
 
+    console.log(notes)
+
     if(req.query) results = filterByQuery(req.query, results);
 
     res.json(results);
@@ -28,10 +30,11 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     // set id based on what the next index of the array will be
-    req.body.id = notes.length.toString();
+
+    req.body.id = notes.notes.length;
   
     // add note to json file and notes array in this function
-    const note = createNewNote(req.body, notes);
+    const note = createNewNote(req.body, notes.notes);
   
     res.json(note);
   });
