@@ -1,12 +1,19 @@
-[
+{
+  "notes": [
     {
-        "title": "Good Work, commander",
-        "text": "Leave us",
-        "id": "test_id"
+      "title": "Good Work, commander",
+      "text": "Leave us",
+      "id": "test_id"
     },
     {
-        "title": "The emperor",
-        "text": "does not share your optimistic appraisal of the situation",
-        "id": "1"
+      "title": "The emperor",
+      "text": "does not share your optimistic appraisal of the situation",
+      "id": "1"
+    },
+    {
+      "title": "It's power to create problems has certainly been confirm",
+      "text": "A city destroyed, and an imperial facility openly attacked?",
+      "id": "2"
     }
-]
+  ]
+}
