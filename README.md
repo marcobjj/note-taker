@@ -43,7 +43,7 @@ Navigate to the server's url on your browser. If using a local server, check the
 ## Contributing
 
 
-None  
+This is a one person project for UC Berkeley bootcamp 2020 and not open to more contributors at this time.
 
 ## Tests
 
