@@ -1,24 +1,32 @@
-{
-  "notes": [
-    {
-      "title": "Good Work, commander",
-      "text": "Leave us",
-      "id": "test_id"
-    },
-    {
-      "title": "The emperor",
-      "text": "does not share your optimistic appraisal of the situation",
-      "id": "1"
-    },
-    {
-      "title": "It's power to create problems has certainly been confirm",
-      "text": "A city destroyed, and an imperial facility openly attacked?",
-      "id": "2"
-    },
-    {
-      "title": "All too easy",
-      "text": "maybe you are not as strong as the emperor thought",
-      "id": 3
-    }
-  ]
-}
+[
+  {
+    "title": "Good Work, commander",
+    "text": "Leave us",
+    "id": "test_id"
+  },
+  {
+    "title": "The emperor",
+    "text": "does not share your optimistic appraisal of the situation",
+    "id": "1"
+  },
+  {
+    "title": "It's power to create problems has certainly been confirm",
+    "text": "A city destroyed, and an imperial facility openly attacked?",
+    "id": "2"
+  },
+  {
+    "title": "All too easy",
+    "text": "maybe you are not as strong as the emperor thought",
+    "id": "3"
+  },
+  {
+    "title": "Impressive",
+    "text": "most impressive",
+    "id": "4"
+  },
+  {
+    "title": "You are in command now",
+    "text": "Admiral Piett. Make ready to land our troops beyond their energy field, and deploy the fleet, so that nothing gets off the system",
+    "id": "4qfg381vfukfoz87lz"
+  }
+]

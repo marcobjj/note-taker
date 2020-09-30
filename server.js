@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const path = require('path');
+const uniqid = require('uniqid');
+
+
 
 
 const PORT = process.env.PORT || 3001;
@@ -31,10 +34,10 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     // set id based on what the next index of the array will be
 
-    req.body.id = notes.notes.length;
+    req.body.id = uniqid();
   
     // add note to json file and notes array in this function
-    const note = createNewNote(req.body, notes.notes);
+    const note = createNewNote(req.body, notes);
   
     res.json(note);
   });
@@ -66,7 +69,7 @@ const createNewNote = (body, notesArray) => {
     notesArray.push(note);
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
-        JSON.stringify({ notes: notesArray }, null, 2)
+        JSON.stringify(notesArray , null, 2)
       );
     return note;
   }
