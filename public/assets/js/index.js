@@ -27,7 +27,7 @@ var saveNote = function(note) {
 // BONUS A function for deleting a note from the db
 var deleteNote = function(id) {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "api/notes/"+id,
     method: "DELETE"
   });
 };
@@ -109,7 +109,7 @@ var renderNoteList = function(notes) {
 
   var noteListItems = [];
 
-  console.log(notes)
+
 
   for (var i = 0; i < notes.length; i++) {
     var note = notes[i];
