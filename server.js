@@ -59,8 +59,6 @@ app.listen(PORT, () => {
 
 app.delete('/api/notes/*', (req, res) => {
 
-    console.log(req.url);
-
     //gets item id from request url
     const id = req.url.split('/api/notes/')[1];
     const note = deleteNote(id, notes);
@@ -78,6 +76,12 @@ const deleteNote = (id, notesArray) => {
         if (element.id == id) note = notesArray.splice(index, 1);
     })
 
+     
+    fs.writeFileSync(
+        path.join(__dirname, './db/db.json'),
+        JSON.stringify(notesArray, null, 2)
+    );
+
     return note
 }
 
@@ -94,7 +98,7 @@ const createNewNote = (body, notesArray) => {
 
     const note = body;
     notesArray.push(note);
-    
+
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
         JSON.stringify(notesArray, null, 2)
